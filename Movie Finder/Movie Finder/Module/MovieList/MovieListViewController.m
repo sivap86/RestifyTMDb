@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     self.title = @"Movie Finder";
     self.tableview.tableFooterView = [UIView new];
@@ -32,15 +33,12 @@
     
     UIImage* image = [UIImage imageNamed:@"settings-icon"];
     CGRect frameimg = CGRectMake(15,0, 22,22);
-    
-    UIButton *someButton = [[UIButton alloc] initWithFrame:frameimg];
-    [someButton setBackgroundImage:image forState:UIControlStateNormal];
-    [someButton addTarget:self action:@selector(SettingsButtonPressed:)
-         forControlEvents:UIControlEventTouchUpInside];
-    [someButton setShowsTouchWhenHighlighted:YES];
-   UIBarButtonItem *mailbutton =[[UIBarButtonItem alloc] initWithCustomView:someButton];
-    self.navigationItem.rightBarButtonItem =mailbutton;
-    
+    UIButton *settingsBtn = [[UIButton alloc] initWithFrame:frameimg];
+    [settingsBtn setBackgroundImage:image forState:UIControlStateNormal];
+    [settingsBtn addTarget:self action:@selector(SettingsButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [settingsBtn setShowsTouchWhenHighlighted:YES];
+    UIBarButtonItem *settingsBarButton =[[UIBarButtonItem alloc] initWithCustomView:settingsBtn];
+    self.navigationItem.rightBarButtonItem =settingsBarButton;
 }
 
 #pragma mark Tableview Delegate Method
@@ -104,8 +102,10 @@
     [_alertController addAction:ok];
     [self presentViewController:_alertController animated:YES completion:nil];
 }
+
 -(void) SettingsButtonPressed:(id) sender {
     UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"settings"];
     [self.navigationController pushViewController:viewController animated:YES];
 }
+
 @end

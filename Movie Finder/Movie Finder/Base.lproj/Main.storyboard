@@ -180,7 +180,7 @@
                     <connections>
                         <outlet property="searchTextField" destination="gk2-6J-kwx" id="PmW-Dq-pdA"/>
                         <outlet property="tableview" destination="Q3s-VA-xlY" id="zKq-Y9-W9V"/>
-                        <segue destination="BYZ-38-t0r" kind="show" id="6UU-on-3xp"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="setting" id="6UU-on-3xp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMM-Na-uU7" userLabel="First Responder" sceneMemberID="firstResponder"/>

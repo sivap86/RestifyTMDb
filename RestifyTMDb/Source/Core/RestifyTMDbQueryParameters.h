@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, TMDbOrderBy) {
 #pragma mark properties
 
 /** The maximum number of movies that should be returned.
- @note For consistent ordering of results when using pagination, you should also provide a value for `#orderByField`.
+ @note For consistent ordering of results when using pagination, you should also provide a value for `#orderBy` Field.
  @since 1.0
  */
 @property (nonatomic, assign, readwrite) NSInteger maxRecords;
