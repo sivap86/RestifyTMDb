@@ -22,8 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark -
 #pragma mark Methods
 
-/**
- Query the TMDb to find specific movies.
+/** Query the TMDb to find specific movies.
  @param parameters representing the query criteria
  @param completion The block that is called when the query is complete
  @since 1.0

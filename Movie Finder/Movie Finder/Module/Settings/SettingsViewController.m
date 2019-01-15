@@ -19,6 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"Settings";
+    
+    #warning Test API Key - Remove later
+    //7bb44bf4314a4af55956a644fe4e0fc0
 }
 
 - (IBAction)saveButtonPressed:(id)sender {
