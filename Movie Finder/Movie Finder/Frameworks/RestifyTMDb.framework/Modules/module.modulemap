@@ -1,0 +1,6 @@
+framework module RestifyTMDb {
+  umbrella header "RestifyTMDb.h"
+
+  export *
+  module * { export * }
+}
