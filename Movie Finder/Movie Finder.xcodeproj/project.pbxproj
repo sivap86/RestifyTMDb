@@ -71,8 +71,8 @@
 		152C905F21EDAB6900B56623 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				152C906121EDAB7F00B56623 /* Settings */,
 				152C906021EDAB7400B56623 /* MovieList */,
+				152C906121EDAB7F00B56623 /* Settings */,
 			);
 			path = Module;
 			sourceTree = "<group>";
