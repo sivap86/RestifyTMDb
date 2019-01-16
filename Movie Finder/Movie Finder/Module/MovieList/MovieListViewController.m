@@ -26,7 +26,7 @@
     self.tableview.tableFooterView = [UIView new];
     
     queryparameter = [RestifyTMDbQueryParameters queryParameters];
-    queryparameter.years = @[@"2015",@"2016"];
+    queryparameter.years = @[@"2017",@"2018"];
     queryparameter.maxRecords = 10;
     queryparameter.orderBy = TMDbOrderByRating;
     queryparameter.sortOrder = TMDbSortOrderDescending;
